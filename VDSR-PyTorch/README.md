@@ -138,9 +138,12 @@ optional arguments:
 python train.py --dataroot ./data/VOC2012 --scale-factor 4 --cuda
 ```
 
-If you want to load weights that you've trained before, run the following command.
-
-```bash
-python train.py --dataroot ./data/VOC2012 --scale-factor 4 --weights ./weights/vdsr_4x_epoch_100.pth --cuda
-```
-
+##### Hyperparameters
+Number of workers: 4
+* Epochs: 100
+* Batch size: 256
+* Learning rate: 0.1
+* Momentum: 0.9
+* Weight decay: 1e-4
+* Gradient clip: 0.4
+* Scale factor: 3
