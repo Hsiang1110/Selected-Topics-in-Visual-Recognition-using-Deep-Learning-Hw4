@@ -40,17 +40,9 @@ python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
                --scale 3
 ```
 
-## Results
+## Results 25.167
 
 PSNR was calculated on the Y channel.
-
-### Set5
-
-| Eval. Mat | Scale | Paper | Ours (91-image) |
-|-----------|-------|-------|-----------------|
-| PSNR | 2 | 36.94 | 37.12 |
-| PSNR | 3 | 33.06 | 33.22 |
-| PSNR | 4 | 30.55 | 30.50 |
 
 #### Hyperparameters
 Scale factor: 3
