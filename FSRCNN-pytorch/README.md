@@ -45,7 +45,7 @@ python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
 PSNR was calculated on the Y channel.
 
 ### Hyperparameters
-Scale factor: 3
+* Scale factor: 3
 * Learning rate: 1e-3
 * Batch size: 16
 * Epochs: 5
