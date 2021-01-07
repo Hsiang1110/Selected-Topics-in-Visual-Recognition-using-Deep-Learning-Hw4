@@ -40,7 +40,7 @@ python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
                --scale 3
 ```
 
-## Results 25.167
+## Results PSNR 25.167
 
 PSNR was calculated on the Y channel.
 
