@@ -5,8 +5,6 @@ https://github.com/yjn870/FSRCNN-pytorch
 
 This repository is implementation of the ["Accelerating the Super-Resolution Convolutional Neural Network"](https://arxiv.org/abs/1608.00367).
 
-<center><img src="./thumbnails/fig1.png"></center>
-
 ## Differences from the original
 
 - Added the zero-padding
@@ -14,26 +12,13 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 
 ## Requirements
 
-- PyTorch 1.0.0
-- Numpy 1.15.4
-- Pillow 5.4.1
-- h5py 2.8.0
-- tqdm 4.30.0
+- PyTorch 1.4.0
+- Numpy 1.19.2
+- Pillow 8.1.0
+- h5py 2.10.0
+- tqdm 4.55.1
 
 ## Train
-
-The 91-image, Set5 dataset converted to HDF5 can be downloaded from the links below.
-
-| Dataset | Scale | Type | Link |
-|---------|-------|------|------|
-| 91-image | 2 | Train | [Download](https://www.dropbox.com/s/01z95js39kgw1qv/91-image_x2.h5?dl=0) |
-| 91-image | 3 | Train | [Download](https://www.dropbox.com/s/qx4swlt2j7u4twr/91-image_x3.h5?dl=0) |
-| 91-image | 4 | Train | [Download](https://www.dropbox.com/s/vobvi2nlymtvezb/91-image_x4.h5?dl=0) |
-| Set5 | 2 | Eval | [Download](https://www.dropbox.com/s/4kzqmtqzzo29l1x/Set5_x2.h5?dl=0) |
-| Set5 | 3 | Eval | [Download](https://www.dropbox.com/s/kyhbhyc5a0qcgnp/Set5_x3.h5?dl=0) |
-| Set5 | 4 | Eval | [Download](https://www.dropbox.com/s/ihtv1acd48cof14/Set5_x4.h5?dl=0) |
-
-Otherwise, you can use `prepare.py` to create custom dataset.
 
 ```bash
 python train.py --train-file "BLAH_BLAH/91-image_x3.h5" \
@@ -48,16 +33,6 @@ python train.py --train-file "BLAH_BLAH/91-image_x3.h5" \
 ```
 
 ## Test
-
-Pre-trained weights can be downloaded from the links below.
-
-| Model | Scale | Link |
-|-------|-------|------|
-| FSRCNN(56,12,4) | 2 | [Download](https://www.dropbox.com/s/1k3dker6g7hz76s/fsrcnn_x2.pth?dl=0) |
-| FSRCNN(56,12,4) | 3 | [Download](https://www.dropbox.com/s/pm1ed2nyboulz5z/fsrcnn_x3.pth?dl=0) |
-| FSRCNN(56,12,4) | 4 | [Download](https://www.dropbox.com/s/vsvumpopupdpmmu/fsrcnn_x4.pth?dl=0) |
-
-The results are stored in the same path as the query image.
 
 ```bash
 python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
@@ -77,6 +52,12 @@ PSNR was calculated on the Y channel.
 | PSNR | 3 | 33.06 | 33.22 |
 | PSNR | 4 | 30.55 | 30.50 |
 
+#### Hyperparameters
+Scale factor: 3
+* Learning rate: 1e-3
+* Batch size: 16
+* Epochs: 5
+* Number of workers: 8
 
 
 
