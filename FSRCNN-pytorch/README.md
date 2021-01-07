@@ -1,3 +1,6 @@
+# Reference
+https://github.com/yjn870/FSRCNN-pytorch
+
 # FSRCNN
 
 This repository is implementation of the ["Accelerating the Super-Resolution Convolutional Neural Network"](https://arxiv.org/abs/1608.00367).
@@ -74,37 +77,6 @@ PSNR was calculated on the Y channel.
 | PSNR | 3 | 33.06 | 33.22 |
 | PSNR | 4 | 30.55 | 30.50 |
 
-<table>
-    <tr>
-        <td><center>Original</center></td>
-        <td><center>BICUBIC x3</center></td>
-        <td><center>FSRCNN x3 (34.66 dB)</center></td>
-    </tr>
-    <tr>
-    	<td>
-    		<center><img src="./data/lenna.bmp""></center>
-    	</td>
-    	<td>
-    		<center><img src="./data/lenna_bicubic_x3.bmp"></center>
-    	</td>
-    	<td>
-    		<center><img src="./data/lenna_fsrcnn_x3.bmp"></center>
-    	</td>
-    </tr>
-    <tr>
-        <td><center>Original</center></td>
-        <td><center>BICUBIC x3</center></td>
-        <td><center>FSRCNN x3 (28.55 dB)</center></td>
-    </tr>
-    <tr>
-    	<td>
-    		<center><img src="./data/butterfly_GT.bmp""></center>
-    	</td>
-    	<td>
-    		<center><img src="./data/butterfly_GT_bicubic_x3.bmp"></center>
-    	</td>
-    	<td>
-    		<center><img src="./data/butterfly_GT_fsrcnn_x3.bmp"></center>
-    	</td>
-    </tr>
-</table>
+
+
+
