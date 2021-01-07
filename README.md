@@ -20,6 +20,6 @@ FSRCNN: https://github.com/yjn870/FSRCNN-pytorch
 * CUDA 10.1
 
 ## Preprocess.ipynb
-* Flip vertically and horizontally
+* Flipping vertically and horizontally
 * Rotation with three different degrees
-* Change the brightness, color and contrast
+* Changing the brightness, color and contrast
