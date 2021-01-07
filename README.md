@@ -1,7 +1,7 @@
 # Selected-Topics-in-Visual-Recognition-using-Deep-Learning-Hw4
 Super-Resolution
 
-The detail content of readme showed in folders
+The detail content of readme is showed in folders
 
 ## Reference
 VDSR: https://github.com/Lornatang/VDSR-PyTorch
