@@ -138,8 +138,8 @@ optional arguments:
 python train.py --dataroot ./data/VOC2012 --scale-factor 4 --cuda
 ```
 
-##### Hyperparameters
-Number of workers: 4
+### Hyperparameters
+* Number of workers: 4
 * Epochs: 100
 * Batch size: 256
 * Learning rate: 0.1
