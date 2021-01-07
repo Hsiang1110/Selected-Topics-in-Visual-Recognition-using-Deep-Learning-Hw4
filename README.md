@@ -4,7 +4,7 @@ Super-Resolution
 The detail content of readme is showed in folders
 
 ## Reference
-VDSR: https://github.com/Lornatang/VDSR-PyTorch
+VDSR: https://github.com/Lornatang/VDSR-PyTorch 
 FSRCNN: https://github.com/yjn870/FSRCNN-pytorch
 
 ## Hardware
