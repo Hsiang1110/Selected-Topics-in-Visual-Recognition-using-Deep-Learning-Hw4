@@ -19,7 +19,7 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 - tqdm 4.55.1
 
 ## Train
-
+Before training, use **prepare.py** to make the json file
 ```bash
 python train.py --train-file "BLAH_BLAH/91-image_x3.h5" \
                 --eval-file "BLAH_BLAH/Set5_x3.h5" \
